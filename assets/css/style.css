@@ -1,0 +1,41 @@
+:root {
+    --black: #0e1111;
+    --dkgreen: #232b2b;
+    --gray: #353839;
+    --grblue: #3b444b;
+    --grayge: #414a4c;
+    --white: white;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--black);
+}
+
+header {
+    background-color: var(--black);
+    padding: 450px 35px;
+    /* background-size: cover; */
+    /* background-position: top; */
+    /* background-attachment: fixed; */
+    background-position: 80%;
+    z-index: 9999;
+}
+
+header a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+header img {
+    width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 50%;
+}
