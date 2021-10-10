@@ -20,9 +20,10 @@ body {
 
 header {
     background-color: var(--black);
-    padding: 85 35px;
+    padding: 0 35px;
     background-position: 80%;
     z-index: 9999;
+    position: sticky;
 }
 
 header a {
@@ -84,12 +85,13 @@ main a {
     text-decoration: none;
 }
 
+main p {
+    color: var(--white);
+}
+
 .greeting {
-    position: absolute;
-    top: 425px;
-    left: 36px;
-    display: flex;
-    justify-content: last baseline;
+    padding: 425px 0 300px 36px;
+  
 }
 
 .photo {
@@ -114,8 +116,44 @@ main aside {
 
 /* work starts here */
 
-article {
+.work {
+    padding: 0 0 500px 36px;
+}
+
+.work a {
+    position: relative; 
     color: var(--white);
+}
+
+/* contact starts here */
+
+.contact {
+    padding: 0 0 0 36px;
+}
+
+.contact a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.contact h3 {
+    color: var(--white);
+}
+
+.links {
+    opacity: 0;
+}
+
+.contact-links:hover .links {
+    opacity: 1;
+}
+/* footer starts here */
+
+footer {
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
