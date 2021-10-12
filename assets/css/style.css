@@ -19,11 +19,12 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: right;
     background-color: var(--black);
     padding: 0 35px;
     background-position: 80%;
     z-index: 9999;
-    position: sticky;
 }
 
 header a {
@@ -38,14 +39,13 @@ header nav {
 
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
+    flex: 0 0 0 0;
     justify-content: flex-end;
     list-style: none;
 }
 
 header nav ul li a {
     padding: 10px 15px;
-    font-weight: lighter;
     font-size: 35px;
 }
 
@@ -79,7 +79,6 @@ header nav ul li a {
 
   /* main starts here */
 
-
 main a {
     color: var(--white);
     text-decoration: none;
@@ -91,27 +90,27 @@ main p {
 
 .greeting {
     padding: 425px 0 300px 36px;
-  
 }
+
 
 .photo {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 main img {
-    position: absolute;
-    left: 440px;
-    top: 300px;
-    width: 300px;
+    float: center;
+    Margin: -533px 750px 0 0;
+    width: 250px;
     height: 300px;
     border-radius: 32%;
 }
 
 main aside {
-    position: absolute;
-    top: 327px;
-    right: 43px;
+    flex-direction: column;
+    float:right;
+    margin: -482px 61px;
 }
 
 /* work starts here */
@@ -135,10 +134,10 @@ main aside {
     color: var(--white);
     text-decoration: none;
 }
-
 .contact h3 {
     color: var(--white);
 }
+
 
 .links {
     opacity: 0;
@@ -157,8 +156,27 @@ footer {
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
-    section {
-        padding: 30px 15px;
-    }        
+@media screen and (max-width: 980px) {
+    header nav ul {
+        justify-content: center;
+        width: 200%;
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      main {
+          display: flex;
+          flex-wrap: wrap;
+          
+     }    
+    
+      aside {
+        width: 200;
+        text-align: left;
+        padding: 0 0 0 72px;
+      }
+
+      footer {
+          text-align: center;
+      }
 }
