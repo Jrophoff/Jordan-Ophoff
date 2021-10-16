@@ -19,12 +19,9 @@ body {
 }
 
 header {
-    display: flex;
     justify-content: right;
     background-color: var(--black);
     padding: 0 35px;
-    background-position: 80%;
-    z-index: 9999;
 }
 
 header a {
@@ -39,14 +36,13 @@ header nav {
 
 header nav ul {
     display: flex;
-    flex: 0 0 0 0;
     justify-content: flex-end;
     list-style: none;
 }
 
 header nav ul li a {
     padding: 10px 15px;
-    font-size: 35px;
+    font-size: 2.55vw;
 }
 
 .underline {
@@ -88,10 +84,6 @@ main p {
     color: var(--white);
 }
 
-.greeting {
-    padding: 425px 0 300px 36px;
-}
-
 
 .photo {
     display: flex;
@@ -101,7 +93,6 @@ main p {
 
 main img {
     float: center;
-    Margin: -533px 750px 0 0;
     width: 250px;
     height: 300px;
     border-radius: 32%;
@@ -110,7 +101,10 @@ main img {
 main aside {
     flex-direction: column;
     float:right;
-    margin: -482px 61px;
+}
+
+main .content-left {
+    flex-direction: column;
 }
 
 /* work starts here */
@@ -157,26 +151,37 @@ footer {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 980px) {
-    header nav ul {
+    /* header nav ul {
         justify-content: center;
-        width: 200%;
         margin-top: 20px;
-        text-align: center;
-      }
+      } */
 
       main {
           display: flex;
           flex-wrap: wrap;
+          justify-content: center;
           
      }    
     
       aside {
-        width: 200;
-        text-align: left;
-        padding: 0 0 0 72px;
+        text-align: center;
       }
 
       footer {
           text-align: center;
       }
 }
+
+ /* MEDIA QUERY FOR TABLETS AND SMALLER */
+ @media screen and (max-width: 768px) {
+
+    header nav ul {
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      header nav ul li a {
+        padding: 10px 15px;
+        font-size: 17px;
+    }
+ }     
