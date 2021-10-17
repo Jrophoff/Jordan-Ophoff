@@ -192,6 +192,12 @@ article {
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 980px) {
 
+
+    header {
+       display: flex;
+       justify-content: center;
+    }
+
       main {
           display: flex;
           flex-wrap: wrap;
@@ -217,7 +223,7 @@ article {
 
  /* MEDIA QUERY FOR TABLETS AND SMALLER */
  @media screen and (max-width: 768px) {
-
+/* 
     header nav ul {
         justify-content: center;
         margin-top: 20px;
@@ -227,4 +233,4 @@ article {
         padding: 10px 15px;
         font-size: 17px;
     }
- }     
+ }      */
