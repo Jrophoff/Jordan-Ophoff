@@ -22,19 +22,14 @@ body {
 
 
 header {
-    justify-content: right;
     background-color: var(--grayge);
     padding: 0 35px;
+    
 }    
 
 header a {
     color: var(--white);
     text-decoration: none;
-}
-
-header nav {
-     
-    margin: 7px 0;
 }
 
 header nav ul {
@@ -203,34 +198,10 @@ article {
           flex-wrap: wrap;
           justify-content: center;
      }    
-    
-      aside {
-        flex-direction: column;
-      }
 
       article {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        max-width: 100%;
       }
-
-      footer {
-          text-align: center;
-          margin-top: 20px;
-      }
-}
-
- /* MEDIA QUERY FOR TABLETS AND SMALLER */
- @media screen and (max-width: 768px) {
-/* 
-    header nav ul {
-        justify-content: center;
-        margin-top: 20px;
-      }
-
-      header nav ul li a {
-        padding: 10px 15px;
-        font-size: 17px;
     }
- }      */
