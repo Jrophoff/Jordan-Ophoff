@@ -116,8 +116,7 @@ main .content-left {
 /* work starts here */
 
 article {
-    margin-left: 3.5%;
-    margin-right: 3.5%
+    margin: 3.5%;
 }
 
 .work {
