@@ -116,14 +116,21 @@ main .content-left {
 /* work starts here */
 
 article {
-    margin: 3.5%
+    margin-left: 3.5%;
+    margin-right: 3.5%
 }
 
 .work {
     /* padding: 0 0 500px 36px; */
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 3.5%;
+}
+
+.work-items {
+    order: 3;
 }
 
 .work img {
