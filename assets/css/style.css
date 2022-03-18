@@ -80,7 +80,7 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    margin: 3.5%
+    margin: 3.5%;
 }
 
 main img {
@@ -138,6 +138,7 @@ article {
     border: solid var(--grayge) 1.5px;
     border-radius: 5%;
     margin: 7%;
+    object-fit: cover;
 }
 
 .work feature {
